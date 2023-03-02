@@ -4,6 +4,7 @@ import Link from "next/link";
 import Head from 'next/head';
 import { Courier_Prime } from '@next/font/google';
 import clsx from 'clsx';
+import { folder } from "@/utils/types";
 
 import celo from "public/images/networks/celo.png";
 import sdl from "public/images/sdl.png";
@@ -13,7 +14,13 @@ const title_font = Courier_Prime({
   preload: false,
 });
 
+interface FolderProps {
+  folder: folder;
+}
 
+interface FolderContainerProps {
+  folders: folder[];
+}
 
 
 export default function Home() {
@@ -27,7 +34,7 @@ export default function Home() {
     { id: 1, name: 'celo', image: celo },
   ];
   
-  const Folder = ({ folder }) => (
+  const Folder = ({ folder }: FolderProps) => (
  <div className="folder">
    <Link href="/networks/[foldername]]" as={`/networks/${folder.name}`}>
     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
@@ -39,13 +46,13 @@ export default function Home() {
       </style>
       <use id="Background" href="#img1" x="0" y="57"/>
     </svg>
-    <Image className="folder-image"  src={folder.image}  transform="translate(-256, -199)"/>
+    <Image className="folder-image" alt="folder" src={folder.image}  />
     <div className="folder-name">{folder.name}</div>
     </Link>
   </div>
   );
 
-  const FolderContainer = ({ folders }) => (
+  const FolderContainer = ({ folders }: FolderContainerProps) => (
     <div className="folder-container">
       <div className="folder-container-bg">
         <div className={clsx("folder-container-fg", title_font.className)}>
