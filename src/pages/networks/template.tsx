@@ -14,20 +14,20 @@ const title_font = Courier_Prime({
 });
 
 export default function Celo() {
-    const [title, setTitle] = useState('Celo');
+    const [title, setTitle] = useState('YOUR_NETWORK_NAME_HERE'); //TODO: Replace with your network name
 
 
 
     return ( 
       <>
       <Head>
-        <title>Celo chain snapshot</title>
+        <title>YOUR_NETWORK_NAME chain snapshot</title> {/*TODO: Replace with your network name */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
-        <meta name="description" content="Community run Celo network node snapsnot brought to you by SDL" />
-        <meta name="keywords" content="Celo, crypto, blockchain, distributed computing, staking defense league, sdl" />
+        <meta name="description" content="Community run <YOUR_NETWORK_NAME> network node snapsnot brought to you by SDL" /> {/*TODO: Replace with your network name */}
+        <meta name="keywords" content="<YOUR_NETWORK_NAME>, crypto, blockchain, distributed computing, staking defense league, sdl" /> {/*TODO: Replace with your network name */}
       </Head>
         <div className="app">
           <div className="top-bar">
@@ -41,13 +41,13 @@ export default function Celo() {
                 <div className={clsx("folder-container-fg-network", title_font.className)}> 
                     <div className="folder-container-content">
                         <div className="code-block">
-                            <span className={clsx("code-line", title_font.className)}>$ wget https://mainnet.celo.snapshot.directory/celo.tar.lz4</span>
+                            {/* <span className={clsx("code-line", title_font.className)}>$ wget https://mainnet.celo.snapshot.directory/celo.tar.lz4</span>  //TODO: Replace with your command instructions 
                             <br/>
-                            <span className={clsx("code-line", title_font.className)}>$ lz4 -d celo.tar.lz4 | tar -xvf - -C /celo</span>
+                            <span className={clsx("code-line", title_font.className)}>$ lz4 -d celo.tar.lz4 | tar -xvf - -C /celo</span> */}
                         </div>
                     </div>
                     <div>
-                        <a href="https://github.com/web3sc/celo-backup-node-automation"><GitHub/></a>
+                        <a href="<LINK_TO_ANSIBLE/TERRAFORM ETC>"><GitHub/></a> {/*TODO: If you are using automation to deploy link it here */}
                     </div>
                 </div>
             </div>
