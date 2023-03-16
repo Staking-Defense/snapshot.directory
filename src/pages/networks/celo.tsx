@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Courier_Prime } from '@next/font/google';
 import clsx from 'clsx';
-import GitHub from '@mui/icons-material/GitHub';
+import Download from '@mui/icons-material/Download';
 
 import sdl from "public/images/sdl.png";
 
@@ -47,7 +47,7 @@ export default function Celo() {
                         </div>
                     </div>
                     <div>
-                        <a href="https://github.com/web3sc/celo-backup-node-automation"><GitHub/></a>
+                        <a href="http://celo.snapshot.directory"><Download/></a>
                     </div>
                 </div>
             </div>
