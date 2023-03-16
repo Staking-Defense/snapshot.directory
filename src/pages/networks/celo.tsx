@@ -41,9 +41,7 @@ export default function Celo() {
                 <div className={clsx("folder-container-fg-network", title_font.className)}> 
                     <div className="folder-container-content">
                         <div className="code-block">
-                            <span className={clsx("code-line", title_font.className)}>$ wget --content-disposition celo.snapshot.directory</span>
-                            <br/>
-                            <span className={clsx("code-line", title_font.className)}>$ lz4 -d celo.snapshot.directory | tar -xvf - -C /celo</span>
+                            <span className={clsx("code-line", title_font.className)}>$ wget -nv -O - &quot;$SNAPSHOT_URI&quot; | lz4 --decompress --to-stdout | tar --directory &quot;$CELO_DATA_DIR&quot;/celo -xvf -</span>
                         </div>
                     </div>
                     <div>
