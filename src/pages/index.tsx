@@ -81,6 +81,12 @@ export default function Home() {
       <link rel="manifest" href="/site.webmanifest"/>
       <meta name="description" content="Community run blockchain network node snapsnots brought to you by SDL" />
       <meta name="keywords" content="crypto, blockchain, distributed computing, staking defense league, sdl" />
+      <meta property="og:image" content="/andriod-chrome-512x512.png"/>
+      <meta property="og:image:type" content="image/png"/>
+      <meta property="og:image:width" content="512"/>
+      <meta property="og:image:height" content="512"/>
+      <meta property="og:type" content="website"/>
+      <meta property="og:url" content="https://snapshot.directory"/>
     </Head>
       <div className="app">
         <div className="top-bar">
