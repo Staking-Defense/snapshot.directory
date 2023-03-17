@@ -41,11 +41,11 @@ export default function Celo() {
                 <div className={clsx("folder-container-fg-network", title_font.className)}> 
                     <div className="folder-container-content">
                         <div className="code-block">
-                            <span className={clsx("code-line", title_font.className)}>$ wget -nv -O - &quot;$SNAPSHOT_URI&quot; | lz4 --decompress --to-stdout | tar --directory &quot;$CELO_DATA_DIR&quot;/celo -xvf -</span>
+                            <span className={clsx("code-line", title_font.className)}>$ wget -nv -O - celo.snapshot.directory | lz4 --decompress --to-stdout | tar --directory &quot;$CELO_DATA_DIR&quot;/celo -xvf -</span>
                         </div>
                     </div>
                     <div>
-                        <a href="http://celo.snapshot.directory"><Download/></a>
+                        <a href="https://celo.snapshot.directory"><Download/></a>
                     </div>
                 </div>
             </div>
