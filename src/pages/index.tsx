@@ -7,7 +7,10 @@ import clsx from 'clsx';
 import { folder } from "@/utils/types";
 
 import celo from "public/images/networks/celo.png";
+import sui from "public/images/networks/sui.svg";
+//TODO: add new network images here
 import sdl from "public/images/sdl.png";
+
 
 const title_font = Courier_Prime({
   weight: ['400'],
@@ -32,6 +35,8 @@ export default function Home() {
 
   const folderData = [
     { id: 1, name: 'celo', image: celo },
+    { id: 2, name: 'sui', image: sui },
+    //TODO: add new network folder
   ];
   
   const Folder = ({ folder }: FolderProps) => (

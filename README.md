@@ -5,8 +5,9 @@ snapshot.directory is a collaborative open-source project by the Staking Defense
 ## Contribute
 1. Add the image in `/public/images/networks` in the format network.filetype.
 2. Copy the `template.tsx` file located in `src/pages/networks/` and rename it to `<network_name>.tsx`.
-3. Replace all instances of "TODO:" in the file with the relevant information.
-4. Open a pull request stating:
+3. Add new network information to main page `index.tsx`
+4. Replace all instances of "TODO:" in the file with the relevant information.
+5. Open a pull request stating:
 - SDL member?
 - Network
 - Endpoint - this will then be added as a subdomain in the format chain.network.snapshot.directory.
