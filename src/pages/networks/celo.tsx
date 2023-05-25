@@ -41,7 +41,7 @@ export default function Celo() {
                 <div className={clsx("folder-container-fg-network", title_font.className)}> 
                     <div className="folder-container-content">
                         <div className="code-block">
-                            <span className={clsx("code-line", title_font.className)}>$ curl -Ls celo.snapshot.directory | lz4 --decompress --to-stdout | tar --strip-components=4 --directory {{ your-celo-dir}}/celo -xvf -</span>
+                            <span className={clsx("code-line", title_font.className)}>$ curl -Ls celo.snapshot.directory | lz4 --decompress --to-stdout | tar --strip-components=4 --directory &quot;$CELO_DATA_DIR&quot;/celo -xvf -</span>
                         </div>
                     </div>
                     <div>
