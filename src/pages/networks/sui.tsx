@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Courier_Prime } from '@next/font/google';
 import clsx from 'clsx';
-import GitHub from '@mui/icons-material/GitHub';
+import Download from '@mui/icons-material/Download';
 
 import sdl from "public/images/sdl.png";
 
@@ -45,7 +45,7 @@ export default function Celo() {
                         </div>
                     </div>
                     <div>
-                        <a href="<LINK_TO_ANSIBLE/TERRAFORM ETC>"><GitHub/></a> {/*TODO: If you are using automation to deploy link it here */}
+                        <a href="https://files.stakingdefense.org/file/sdl-snapshots/sdl-sui-snapshot.tar.lz4"><Download/></a>
                     </div>
                 </div>
             </div>

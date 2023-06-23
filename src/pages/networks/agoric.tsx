@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Courier_Prime } from '@next/font/google';
 import clsx from 'clsx';
-import GitHub from '@mui/icons-material/GitHub';
+import Download from '@mui/icons-material/Download';
 
 import sdl from "public/images/sdl.png";
 
@@ -43,6 +43,9 @@ export default function Celo() {
                         <div className="code-block">
                             <span className={clsx("code-line", title_font.className)}>$ curl -Ls https://files.stakingdefense.org/file/sdl-snapshots/sdl-agoric-snapshot.tar.lz4 | lz4 --decompress --to-stdout | tar -x -C $HOME/.agoric</span> 
                         </div>
+                    </div>
+                    <div>
+                        <a href="https://files.stakingdefense.org/file/sdl-snapshots/sdl-agoric-snapshot.tar.lz4"><Download/></a>
                     </div>
                     <div>
                     </div>
