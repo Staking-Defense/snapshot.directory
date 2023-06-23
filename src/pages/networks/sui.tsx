@@ -41,9 +41,7 @@ export default function Celo() {
                 <div className={clsx("folder-container-fg-network", title_font.className)}> 
                     <div className="folder-container-content">
                         <div className="code-block">
-                            <span className={clsx("code-line", title_font.className)}>                coming               </span>  {/*TODO: Replace with your command instructions */}
-                            <br/>
-                            <span className={clsx("code-line", title_font.className)}>                 soon                </span>
+                            <span className={clsx("code-line", title_font.className)}>                https://files.stakingdefense.org/file/sdl-snapshots/sdl-sui-snapshot.tar.lz4               </span>  {/*TODO: Replace with your command instructions */}
                         </div>
                     </div>
                     <div>
