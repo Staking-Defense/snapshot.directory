@@ -8,6 +8,7 @@ import { folder } from "@/utils/types";
 
 import celo from "public/images/networks/celo.png";
 import sui from "public/images/networks/sui.svg";
+import agoric from "public/images/networks/agoric.svg"
 //TODO: add new network images here
 import sdl from "public/images/sdl.png";
 
@@ -34,6 +35,7 @@ export default function Home() {
   }, []);
 
   const folderData = [
+    { id: 2, name: 'agoric', image: agoric },
     { id: 1, name: 'celo', image: celo },
     { id: 2, name: 'sui', image: sui },
     //TODO: add new network folder
