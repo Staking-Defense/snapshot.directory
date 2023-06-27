@@ -45,7 +45,7 @@ export default function Celo() {
                         </div>
                     </div>
                     <div>
-                        <a href="https://files.stakingdefense.org/file/sdl-snapshots/sdl-sui-snapshot.tar.lz4"><Download/></a>
+                        <a href="https://files.stakingdefense.org/file/sdl-snapshots/sdl-sui-snapshot.tgz"><Download/></a>
                     </div>
                 </div>
             </div>
